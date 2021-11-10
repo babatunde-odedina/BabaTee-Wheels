@@ -1,0 +1,53 @@
+.newsletter {
+  padding: 6rem 2rem 2rem;
+  text-align: center;
+  background: url(../../images/letter-bg.png) no-repeat;
+  background-size: cover;
+}
+
+.newsletter h3 {
+  color: #130f40;
+  font-size: 3rem;
+}
+
+.newsletter p {
+  color: #666666;
+  font-size: 1.5rem;
+  padding: 1rem 0;
+}
+
+.newsletter form {
+  margin: 1rem auto;
+  max-width: 60rem;
+  height: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-shadow: 0 0.5rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0.5rem rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  border-radius: 5rem;
+}
+
+.newsletter form input[type='email'] {
+  height: 100%;
+  width: 100%;
+  font-size: 1.6rem;
+  color: #130f40;
+  text-transform: none;
+  padding: 0 2rem;
+}
+
+.newsletter form input[type='submit'] {
+  height: 100%;
+  width: 17rem;
+  font-size: 1.7rem;
+  color: #130f40;
+  background: #ffee80;
+  cursor: pointer;
+}
+
+.newsletter form input[type='submit']:hover {
+  background: #f9d806;
+}
+/*# sourceMappingURL=Newsletter.css.map */

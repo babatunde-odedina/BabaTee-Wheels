@@ -1,0 +1,63 @@
+.icons_container {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1.5rem;
+  background: #eeeeee;
+}
+
+.icons_container .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1.5rem;
+  padding: 2rem;
+  background: #fff;
+  -webkit-box-shadow: 0 0.5rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0.5rem rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+}
+
+.icons_container .icons:hover {
+  background: #130f40;
+}
+
+.icons_container .icons:hover .icon {
+  background: #f9d806;
+}
+
+.icons_container .icons:hover .content h3 {
+  color: #fff;
+}
+
+.icons_container .icons:hover .content p {
+  color: #eee;
+}
+
+.icons_container .icons .icon {
+  height: 5rem;
+  width: 5rem;
+  line-height: 5rem;
+  font-size: 2.5rem;
+  border-radius: 50%;
+  background: #eeeeee;
+  color: #130f40;
+  text-align: center;
+}
+
+.icons_container .icons .content h3 {
+  color: #f9d806;
+  font-size: 2.5rem;
+}
+
+.icons_container .icons .content p {
+  color: #666666;
+  font-size: 1.5rem;
+}
+/*# sourceMappingURL=IconSection.css.map */

@@ -1,0 +1,44 @@
+@import '../../variables.scss';
+
+.review {
+  .review_slider {
+    padding-bottom: 3rem;
+    .box {
+      text-align: center;
+      padding: 2rem;
+      margin: 2rem 0;
+      opacity: 0.4;
+      transform: scale(0.9);
+      img {
+        width: 7rem;
+        height: 7rem;
+        border-radius: 50%;
+        margin-bottom: 1rem;
+      }
+      .content {
+        p {
+          font-size: 1.5rem;
+          color: $lightColor;
+          padding: 1rem 0;
+        }
+        h3 {
+          font-size: 2.2rem;
+          color: $black;
+          padding-bottom: 0.5rem;
+        }
+      }
+      .stars {
+        .star_icon {
+          font-size: 1.7rem;
+          color: $yellow;
+        }
+      }
+    }
+    .swiper-slide-active {
+      opacity: 1;
+      transform: scale(1);
+      box-shadow: $boxShadow;
+      border: $border;
+    }
+  }
+}

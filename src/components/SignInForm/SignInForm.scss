@@ -1,0 +1,76 @@
+@import '../../variables.scss';
+
+.login_form_container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1000;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+
+  .close_login_form {
+    position: absolute;
+    top: 1.5rem;
+    right: 2.5rem;
+    font-size: 5rem;
+    color: $black;
+    cursor: pointer;
+  }
+  form {
+    padding: 2rem;
+    margin: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: $boxShadow;
+    background-color: white;
+    border: $border;
+    text-align: center;
+    width: 40rem;
+    h3 {
+      color: $black;
+      font-size: 2.5rem;
+      padding-bottom: 1rem;
+      text-transform: uppercase;
+    }
+    .btn {
+      @include button;
+      display: block;
+      width: 100%;
+      margin: 0.5rem 0;
+    }
+
+    .buttons {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .box {
+      margin: 0.7rem 0;
+      width: 100%;
+      text-transform: none;
+      color: $black;
+      font-size: 1.6rem;
+      padding: 1rem 1.2rem;
+      border: $border;
+    }
+    p {
+      padding: 1rem 0;
+      font-size: 1.5rem;
+      color: $lightColor;
+      a {
+        color: $yellow;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+.login_form_container_active {
+  top: 105%;
+  opacity: 0;
+}

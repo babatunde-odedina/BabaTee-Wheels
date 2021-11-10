@@ -1,0 +1,40 @@
+@import '../../variables.scss';
+
+.footer {
+  background: $lightYellow;
+  .box_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+    .box {
+      h3 {
+        color: $black;
+        font-size: 2.2rem;
+        padding: 1rem 0;
+      }
+      .link {
+        color: $lightColor;
+        font-size: 1.4rem;
+        display: block;
+        padding: 1rem 0;
+        .icon {
+          margin-right: 0.5rem;
+          color: $black;
+        }
+        &:hover {
+          .icon {
+            margin-right: 2rem;
+          }
+        }
+      }
+    }
+  }
+  .credit {
+    text-align: center;
+    border-top: $border;
+    padding: 1rem;
+    padding-top: 2.5rem;
+    margin-top: 2rem;
+    font-size: 2rem;
+  }
+}

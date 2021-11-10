@@ -1,0 +1,46 @@
+.review .review_slider {
+  padding-bottom: 3rem;
+}
+
+.review .review_slider .box {
+  text-align: center;
+  padding: 2rem;
+  margin: 2rem 0;
+  opacity: 0.4;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.review .review_slider .box img {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.review .review_slider .box .content p {
+  font-size: 1.5rem;
+  color: #666666;
+  padding: 1rem 0;
+}
+
+.review .review_slider .box .content h3 {
+  font-size: 2.2rem;
+  color: #130f40;
+  padding-bottom: 0.5rem;
+}
+
+.review .review_slider .box .stars .star_icon {
+  font-size: 1.7rem;
+  color: #f9d806;
+}
+
+.review .review_slider .swiper-slide-active {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-box-shadow: 0 0.5rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0.5rem rgba(0, 0, 0, 0.1);
+  border: 0.1rem solid rgba(0, 0, 0, 0.1);
+}
+/*# sourceMappingURL=Review.css.map */

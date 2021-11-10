@@ -1,0 +1,43 @@
+@import '../../variables.scss';
+
+.contact {
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    .map {
+      flex: 1 1 42rem;
+      width: 100%;
+      padding: 2rem;
+      border: $border;
+      border-radius: 0.5rem;
+      box-shadow: $boxShadow;
+    }
+    form {
+      flex: 1 1 42rem;
+      padding: 2rem;
+      border: $border;
+      border-radius: 0.5rem;
+      box-shadow: $boxShadow;
+      text-align: center;
+      h3 {
+        font-size: 3rem;
+        color: $black;
+      }
+      .box {
+        margin: 0.7rem 0;
+        width: 100%;
+        border: $border;
+        padding: 1rem;
+        font-size: 1.6rem;
+        color: $black;
+        text-transform: none;
+        border-radius: 0.5rem;
+      }
+      textarea {
+        height: 15rem;
+        resize: none;
+      }
+    }
+  }
+}

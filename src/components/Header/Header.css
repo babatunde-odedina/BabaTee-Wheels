@@ -1,0 +1,121 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 3rem 9%;
+}
+
+.header .logo {
+  font-size: 2.5rem;
+  color: #130f40;
+  font-weight: bolder;
+}
+
+.header .logo span {
+  color: #f9d806;
+}
+
+.header .menu_btn {
+  font-size: 2.5rem;
+  color: #666666;
+  cursor: pointer;
+  display: none;
+}
+
+.header .navbar .nav {
+  font-size: 1.7rem;
+  margin: 0 1rem;
+  color: #130f40;
+  cursor: pointer;
+}
+
+.header .navbar .nav:hover {
+  color: #f9d806;
+}
+
+.header .login_btn .btn {
+  display: inline-block;
+  margin-top: 1rem;
+  border-radius: 0.5rem;
+  background-color: #ffee80;
+  color: #130f40;
+  font-weight: 500;
+  font-size: 1.7rem;
+  cursor: pointer;
+  padding: 0.8rem 3rem;
+  margin-top: 0;
+}
+
+.header .login_btn .btn:hover {
+  background-color: #f9d806;
+}
+
+.header .login_btn .icon {
+  font-size: 2.5rem;
+  color: #666666;
+  cursor: pointer;
+  display: none;
+}
+
+.header_active {
+  -webkit-box-shadow: 0 0.5rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0.5rem rgba(0, 0, 0, 0.1);
+  padding: 2rem 9%;
+}
+
+@media (max-width: 991px) {
+  .header {
+    padding: 2rem;
+  }
+  .header_active {
+    padding: 2rem 9%;
+  }
+}
+
+@media (max-width: 768px) {
+  .header .menu_btn {
+    display: inline-block;
+  }
+  .header .navbar {
+    position: absolute;
+    top: 99%;
+    left: 0;
+    right: 0;
+    background: white;
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  .header .navbar .nav {
+    display: block;
+    margin: 2rem;
+    font-size: 2rem;
+  }
+  .header .navbar_active {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  .header .fa_times {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  .header .login_btn .btn {
+    display: none;
+  }
+  .header .login_btn .icon {
+    display: block;
+  }
+}
+/*# sourceMappingURL=Header.css.map */

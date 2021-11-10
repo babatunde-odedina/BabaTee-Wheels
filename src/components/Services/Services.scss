@@ -1,0 +1,49 @@
+@import '../../variables.scss';
+
+.services {
+  .heading {
+    @include heading;
+  }
+  .box_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+    .box {
+      text-align: center;
+      padding: 2rem;
+      border-radius: 0.5rem;
+      box-shadow: $boxShadow;
+      border: $border;
+      cursor: pointer;
+      &:hover {
+        background: $black;
+        h3 {
+          color: #fff;
+        }
+        p {
+          color: #eee;
+        }
+      }
+      .s_icons {
+        height: 6rem;
+        width: 6rem;
+        line-height: 6rem;
+        font-size: 2.5rem;
+        color: $black;
+        background: $yellow;
+        border-radius: 50%;
+        margin-bottom: 1rem;
+      }
+      h3 {
+        color: $black;
+        font-size: 2.2rem;
+      }
+      p {
+        color: $lightColor;
+        font-size: 1.4rem;
+        padding: 1rem 0;
+        line-height: 1.8;
+      }
+    }
+  }
+}

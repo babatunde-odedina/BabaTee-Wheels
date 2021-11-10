@@ -1,0 +1,43 @@
+.footer {
+  background: #ffee80;
+}
+
+.footer .box_container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1.5rem;
+}
+
+.footer .box_container .box h3 {
+  color: #130f40;
+  font-size: 2.2rem;
+  padding: 1rem 0;
+}
+
+.footer .box_container .box .link {
+  color: #666666;
+  font-size: 1.4rem;
+  display: block;
+  padding: 1rem 0;
+}
+
+.footer .box_container .box .link .icon {
+  margin-right: 0.5rem;
+  color: #130f40;
+}
+
+.footer .box_container .box .link:hover .icon {
+  margin-right: 2rem;
+}
+
+.footer .credit {
+  text-align: center;
+  border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  padding-top: 2.5rem;
+  margin-top: 2rem;
+  font-size: 2rem;
+}
+/*# sourceMappingURL=Footer.css.map */

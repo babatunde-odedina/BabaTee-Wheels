@@ -1,0 +1,49 @@
+@import '../../variables.scss';
+
+.icons_container {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1.5rem;
+  background: #eeeeee;
+  .icons {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 2rem;
+    background: #fff;
+    box-shadow: $boxShadow;
+    border-radius: 0.5rem;
+    &:hover {
+      background: $black;
+      .icon {
+        background: $yellow;
+      }
+      .content h3 {
+        color: #fff;
+      }
+      .content p {
+        color: #eee;
+      }
+    }
+    .icon {
+      height: 5rem;
+      width: 5rem;
+      line-height: 5rem;
+      font-size: 2.5rem;
+      border-radius: 50%;
+      background: #eeeeee;
+      color: $black;
+      text-align: center;
+    }
+    .content h3 {
+      color: $yellow;
+      font-size: 2.5rem;
+    }
+    .content p {
+      color: $lightColor;
+      font-size: 1.5rem;
+    }
+  }
+}

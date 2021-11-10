@@ -1,0 +1,45 @@
+@import '../../variables.scss';
+
+.newsletter {
+  padding: 6rem 2rem 2rem;
+  text-align: center;
+  background: url(../../images/letter-bg.png) no-repeat;
+  background-size: cover;
+  h3 {
+    color: $black;
+    font-size: 3rem;
+  }
+  p {
+    color: $lightColor;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+  }
+  form {
+    margin: 1rem auto;
+    max-width: 60rem;
+    height: 5rem;
+    display: flex;
+    box-shadow: $boxShadow;
+    overflow: hidden;
+    border-radius: 5rem;
+    input[type='email'] {
+      height: 100%;
+      width: 100%;
+      font-size: 1.6rem;
+      color: $black;
+      text-transform: none;
+      padding: 0 2rem;
+    }
+    input[type='submit'] {
+      height: 100%;
+      width: 17rem;
+      font-size: 1.7rem;
+      color: $black;
+      background: $lightYellow;
+      cursor: pointer;
+      &:hover {
+        background: $yellow;
+      }
+    }
+  }
+}

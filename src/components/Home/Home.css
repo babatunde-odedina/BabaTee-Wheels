@@ -1,0 +1,33 @@
+.home {
+  padding-top: 10rem;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+.home h1 {
+  font-size: 7.5vw;
+  text-transform: uppercase;
+  color: #130f40;
+}
+
+.home img {
+  width: 100%;
+  margin: 1rem 0;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  border-radius: 0.5rem;
+  background-color: #ffee80;
+  color: #130f40;
+  font-weight: 500;
+  font-size: 1.7rem;
+  cursor: pointer;
+  padding: 0.8rem 3rem;
+}
+
+.btn:hover {
+  background-color: #f9d806;
+}
+/*# sourceMappingURL=Home.css.map */
